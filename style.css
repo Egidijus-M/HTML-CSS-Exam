@@ -1,0 +1,197 @@
+/* Mobile first */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #625f66;
+    text-align: center;
+}
+
+header .logo {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    width: 150px;
+    border: 1px solid #625f66;
+    padding: 8px 25px;
+    margin-bottom: 5%;
+    background-image: url(https://www.pngarea.com/pngl/435/6992114_search-icon-png-image-free-download-searchpng-search.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 6px;
+    background-size: 16px;
+    color: gray;
+  }
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+}
+
+section h1 {
+    position: absolute;
+    color: #625f66;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 5px;
+}  
+
+.portraits {
+    display: flex;
+    justify-content: center; 
+    justify-content: space-between;
+}
+
+.cropp {
+    width: 110px;
+    height: 110px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.cropp:last-child {
+    margin-right: 0;
+}
+
+.cropp img {
+    height: auto;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: auto;
+    max-width: max-content;
+    filter: grayscale();
+}
+
+.start {
+    text-align: center;
+    width: 100%;
+    color: #625f66;
+}
+
+.start h3 {
+    color: orange;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile .cropp {
+    height: 150px;
+    width: 150px;
+}
+
+.contacts {
+    text-align: center;
+    color: #625f66;
+    font-size: 13px ;
+}
+
+.contacts p {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.contacts span {
+    font-weight: bold;
+    color: orange;
+}
+
+footer {
+    text-align: center;
+    background-color: #625f66;
+    border-top: 6px solid orange;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+footer span {
+    color: orange;
+    font-weight: bold;
+}
+
+footer ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin-top: 8px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: orange;
+}
+
+@media screen and (min-width: 768px){
+
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    input {
+        margin-bottom: 0;
+    }
+
+    .portraits {
+        margin-top: -12%;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .cropp {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .profile .cropp {
+        height: 100px;
+        width: 100px;
+    }
+
+    .contacts {
+        margin-right: 150px;
+        margin-top: 3%;
+    }
+
+    .contacts:last-child {
+        margin-right: 0;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 45px;
+    }
+
+}
