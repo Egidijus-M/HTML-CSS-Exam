@@ -1,2 +1,2 @@
 # HTML-CSS-Exam
-Responsive webpage for HTML/CSS Exam
+Webpage with responsive design for HTML/CSS Exam
